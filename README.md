@@ -1,4 +1,4 @@
-# A Laravel Nova WYSIWYG field based on a Quill editor.
+# A Laravel Nova WYSIWYG field based on a Quill editor
 
 ## ✅ Requirements
 
