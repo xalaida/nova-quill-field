@@ -16,7 +16,7 @@ class Quill extends Field implements StorableContract
     /**
      * @inheritdoc
      */
-    public $component = 'quill-nova-field';
+    public $component = 'nova-quill-field';
 
     /**
      * @inheritdoc

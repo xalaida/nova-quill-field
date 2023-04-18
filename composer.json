@@ -1,5 +1,5 @@
 {
-    "name": "nevadskiy/quill-nova-field",
+    "name": "nevadskiy/nova-quill-field",
     "description": "A Laravel Nova WYSIWYG field based on a Quill editor.",
     "keywords": [
         "laravel",

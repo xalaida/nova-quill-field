@@ -13,7 +13,7 @@ class QuillServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Nova::serving(function () {
-            Nova::script('quill-nova-field', __DIR__.'/../dist/js/field.js');
+            Nova::script('nova-quill-field', __DIR__.'/../dist/js/field.js');
         });
     }
 }

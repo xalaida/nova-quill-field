@@ -1,8 +1,23 @@
 # A Laravel Nova WYSIWYG field based on a Quill editor.
 
-## Demo
+## ✅ Requirements
+
+- Laravel Nova `4.0` or newer
+- Laravel `7.3` or newer
+
+## 🔌 Installation
+
+Install the package via composer.
+
+```bash
+composer require nevadskiy/nova-nova-field
+````
+
+## 📺 Demo
 
 ```php
+use Nevadskiy\Quill\Quill;
+
 public function fields(): array
 {
     return [
