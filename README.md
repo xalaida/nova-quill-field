@@ -10,7 +10,7 @@
 Install the package via composer.
 
 ```bash
-composer require nevadskiy/nova-nova-field
+composer require nevadskiy/nova-quill-field
 ````
 
 ## 📺 Demo
