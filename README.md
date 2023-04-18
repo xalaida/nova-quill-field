@@ -27,7 +27,7 @@ public function fields(): array
             ->toolbar([
                 [['header' => 2]],
                 ['bold', 'italic', 'underline'],
-                [['list' => 'ordered'], ['list' => 'bullet' ]],
+                [['list' => 'ordered'], ['list' => 'bullet']],
                 ['blockquote'],
                 ['link', 'image', 'video'],
                 ['clean'],
