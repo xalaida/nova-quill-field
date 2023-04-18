@@ -8,6 +8,7 @@ public function fields(): array
     return [
         Quill::make('Content')
             ->withFiles()
+            ->theme('bubble')
             ->toolbar([
                 [['header' => 2]],
                 ['bold', 'italic', 'underline'],
