@@ -64,6 +64,7 @@ class Quill extends Field implements StorableContract
     {
         return array_merge(parent::jsonSerialize(), [
             'shouldShow' => $this->shouldBeExpanded(),
+            'withFiles' => $this->withFiles,
         ]);
     }
 }
