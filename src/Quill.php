@@ -34,7 +34,7 @@ class Quill extends Field implements StorableContract
     /**
      * Specify a Quill theme.
      */
-    public function theme(string $theme): static
+    public function theme(string $theme): self
     {
         return $this->withMeta(['theme' => $theme]);
     }
@@ -42,7 +42,7 @@ class Quill extends Field implements StorableContract
     /**
      * Specify a Quill toolbar.
      */
-    public function toolbar($toolbar): static
+    public function toolbar($toolbar): self
     {
         return $this->withMeta(['toolbar' => $toolbar]);
     }
@@ -50,7 +50,7 @@ class Quill extends Field implements StorableContract
     /**
      * Specify Quill options.
      */
-    public function options(array $options): static
+    public function options(array $options): self
     {
         return $this->withMeta(['options' => $options]);
     }
