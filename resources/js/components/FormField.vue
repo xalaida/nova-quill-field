@@ -47,6 +47,12 @@ export default {
   ],
 
   methods: {
+    fill(formData) {
+        this.fillIfVisible(formData, this.fieldAttribute, this.value || '')
+
+        this.fillAttachmentDraftId(formData)
+    },
+
     quill () {
       return this.$refs.editor.getQuill()
     },
