@@ -7,6 +7,7 @@ use Laravel\Nova\Fields\Expandable;
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\HasAttachments;
 use Laravel\Nova\Contracts\Storable as StorableContract;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Quill extends Field implements StorableContract
 {
@@ -56,9 +57,7 @@ class Quill extends Field implements StorableContract
     }
 
     /**
-     * Prepare the element for JSON serialization.
-     *
-     * @return array
+     * @inheritdoc
      */
     public function jsonSerialize(): array
     {
@@ -66,5 +65,13 @@ class Quill extends Field implements StorableContract
             'shouldShow' => $this->shouldBeExpanded(),
             'withFiles' => $this->withFiles,
         ]);
+    }
+
+    /**
+     * @inheritdoc
+     */
+    protected function fillAttribute(NovaRequest $request, $requestAttribute, $model, $attribute)
+    {
+        return $this->fillAttributeWithAttachment($request, $requestAttribute, $model, $attribute);
     }
 }
