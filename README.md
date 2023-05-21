@@ -6,7 +6,7 @@
 
 ## 🔌 Installation
 
-Install the package via composer.
+Install the package via Composer:
 
 ```bash
 composer require nevadskiy/nova-quill-field
