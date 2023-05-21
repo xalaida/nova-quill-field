@@ -3,7 +3,6 @@
 ## ✅ Requirements
 
 - Laravel Nova `4.0` or newer
-- Laravel `7.3` or newer
 
 ## 🔌 Installation
 
